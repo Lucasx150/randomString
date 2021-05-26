@@ -1,2 +1,12 @@
 <html>
-
+  <body>
+    <script>function makeid(length) {
+      var result           = [];
+      var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"§$%&/()=?²³{[]}\´`*~+#-_.:,;<>|^°µ@äöüß';
+      var charactersLength = characters.length;
+      for ( var i = 0; i < length; i++ ) {result.push(characters.charAt(Math.floor(Math.random() * charactersLength)));}
+      return result.join('');}
+      document.write(makeid(250));
+    </script>
+  </body>
+</html>
