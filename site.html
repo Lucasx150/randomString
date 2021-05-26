@@ -6,7 +6,10 @@
       var charactersLength = characters.length;
       for ( var i = 0; i < length; i++ ) {result.push(characters.charAt(Math.floor(Math.random() * charactersLength)));}
       return result.join('');}
-      document.write("<p>" + makeid(5000) + "</p>");
+      
+      var x = makeid(10000)
+      document.write("<p>" + x + "</p>");
+      console.log(x);
     </script>
   </body>
 </html>
